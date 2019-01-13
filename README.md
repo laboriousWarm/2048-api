@@ -6,7 +6,7 @@ python evaluate.py >> evaluate.log
 python generate_fingerprint.py  
 在生成指纹和评估时要将myAgent2.py的代码最后的主体部分进行注释  
 生成.log文件时评测次数为50次时，服务器和本机都会崩溃，因此只能采用原始的10次  
-.h5文件，放至百度云  
+.h5文件，放至百度云  https://pan.baidu.com/s/1IwcMncP8vpiySilgHlwwHw
 # Code structure
 * [`game2048/`](game2048/): the main package.
     * [`game.py`](game2048/game.py): the core 2048 `Game` class.
