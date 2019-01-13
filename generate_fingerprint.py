@@ -8,7 +8,7 @@ def generate_fingerprint(AgentClass, **kwargs):
         board_json = json.load(f)
 
     game = Game(size=4, enable_rewrite_board=True)
-    agent = AgentClass(game=game, **kwargs)
+    agent = AgentClass(game=game, max_depth=16, modelConfig=[128, 512, 1024])
 
     trace = []
     for board in board_json:
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     '''====================
     Use your own agent here.'''
-    from game2048.agents import ExpectiMaxAgent as TestAgent
+    from myAgent2 import my_agent as TestAgent
     '''===================='''
 
     fingerprint = generate_fingerprint(TestAgent)
